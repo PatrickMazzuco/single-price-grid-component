@@ -24,6 +24,7 @@ body {
 
 .card {
   max-width: 650px;
+  margin: 30px;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0px 15px 25px -10px rgba(0, 0, 0, 0.4);
@@ -106,7 +107,32 @@ article {
 }
 
 footer {
-  margin-top: 30px;
+  margin: 30px;
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  body {
+    height: auto;
+  }
+
+  .card {
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+    grid-template-columns: 1fr;
+    grid-template-areas: "join" "subscription" "why-us";
+  }
+
+  article {
+    padding: 30px 25px;
+  }
+
+  .join p.content {
+    line-height: 30px;
+  }
+
+  footer {
+    margin-top: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
